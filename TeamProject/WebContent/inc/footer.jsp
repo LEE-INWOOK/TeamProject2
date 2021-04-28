@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<<<<<<< HEAD
+=======
+    <!-- footer 팀원 이름, 연락처, 및 개인 프로젝트 연결 <a href="mailto:#"> -->
+>>>>>>> branch 'Yeeun' of https://github.com/LEE-INWOOK/TeamProject2.git
       <footer class="bg-dark text-white">
         <div class="container py-4">
           <div class="row py-5">
@@ -42,4 +46,8 @@
             </div>
           </div>
         </div>
+<<<<<<< HEAD
       </footer>
+=======
+      </footer>
+>>>>>>> branch 'Yeeun' of https://github.com/LEE-INWOOK/TeamProject2.git
