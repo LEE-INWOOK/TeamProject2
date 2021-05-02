@@ -11,8 +11,8 @@
                 </li>
                 
                
-                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="pagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
-                  <div class="dropdown-menu mt-3" aria-labelledby="pagesDropdown"><a class="dropdown-item border-0 transition-link" href="index.html">T-shirts</a><a class="dropdown-item border-0 transition-link" href="shop.html">Trousers</a><a class="dropdown-item border-0 transition-link" href="cart.html">Skirts</a><a class="dropdown-item border-0 transition-link" href="checkout.html">jackets</a><a class="dropdown-item border-0 transition-link" href="index.html">Caps</a></div>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="pagesDropdown" href="shop.jsp" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
+                  <div class="dropdown-menu mt-3" aria-labelledby="pagesDropdown"><a class="dropdown-item border-0 transition-link" href="tshirts.jsp">T-shirts</a><a class="dropdown-item border-0 transition-link" href="trousers.jsp">Trousers</a><a class="dropdown-item border-0 transition-link" href="skirts.jsp">Skirts</a><a class="dropdown-item border-0 transition-link" href="jackets.jsp">jackets</a><a class="dropdown-item border-0 transition-link" href="caps.jsp">Caps</a></div>
                 </li>
               </ul>
               <ul class="navbar-nav ml-auto">               

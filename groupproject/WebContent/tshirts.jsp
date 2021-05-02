@@ -5,7 +5,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Boutique | Ecommerce bootstrap template</title>
+<!--     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  -->
+    <title>t-shirts </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
@@ -36,7 +37,7 @@
   <body>
     <div class="page-holder">
       <!-- navbar-->
-     <jsp:include page="inc/top.jsp"/>
+     <jsp:include page="/inc/top.jsp"/>
       <!--  Modal -->
       <div class="modal fade" id="productView" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
@@ -57,7 +58,7 @@
                     
 <!--                     이미지누루면 확대돼서 나오는 이미 -->
 
-                    <h2 class="h4">TEST</h2>
+                    <h2 class="h4">한글테스츠</h2>
                     <p class="text-muted">$20</p>
                     <p class="text-small mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.</p>
                     <div class="row align-items-stretch mb-4">
@@ -103,82 +104,103 @@
             <div class="row">
               <!-- SHOP SIDEBAR-->
               <div class="col-lg-3 order-2 order-lg-1">
-                <h5 class="text-uppercase mb-4">Categories</h5>
-                <div class="py-2 px-4 bg-dark text-white mb-3"><strong class="small text-uppercase font-weight-bold">Fashion &amp; Acc</strong></div>
+                <h5 class="text-uppercase mb-4"></h5>
+                <div class="py-2 px-4 bg-dark text-white mb-3"><strong class="small text-uppercase font-weight-bold">Fashion</strong></div>
                 <ul class="list-unstyled small text-muted pl-lg-4 font-weight-normal">
                   <li class="mb-2"><a class="reset-anchor" href="#">T-Shirts</a></li>
                   <li class="mb-2"><a class="reset-anchor" href="#">Trousers</a></li>
                   <li class="mb-2"><a class="reset-anchor" href="#">Skirts</a></li>
-                  <li class="mb-2"><a class="reset-anchor" href="#">Socks</a></li>
-                  <li class="mb-2"><a class="reset-anchor" href="#">Sunglasses</a></li>
-                  <li class="mb-2"><a class="reset-anchor" href="#">etc</a></li>
+                  <li class="mb-2"><a class="reset-anchor" href="#">Jackets</a></li>
+                  <li class="mb-2"><a class="reset-anchor" href="#">Caps</a></li>
+                 
                 </ul>
                
-       
+               
+               
+       <br>
+       <br>
+       <br>
+       <br>
                 <h6 class="text-uppercase mb-4">Price range</h6>
                 <div class="price-range pt-4 mb-5">
-                  <div id="range"></div>
+                  
+                 <div id="range"></div>
+                  
                   <div class="row pt-2">
-                    <div class="col-6"><strong class="small font-weight-bold text-uppercase">From</strong></div>
-                    <div class="col-6 text-right"><strong class="small font-weight-bold text-uppercase">To</strong></div>
+                    <div class="col-6"><strong class="small font-weight-bold text-uppercase">From<input type="hidden" value="" id="lower"></strong></div>
+                    <div class="col-6 text-right"><strong class="small font-weight-bold text-uppercase">To<input type="hidden" value="" id="upper"></strong></div>
                   </div>
+                  
                 </div>
-                <h6 class="text-uppercase mb-3">show only</h6>
+                
+                
+                
+                
+                
+                
+                
+                <h6 class="text-uppercase mb-3"></h6>
                 <div class="custom-control custom-checkbox mb-1">
-                  <input class="custom-control-input" id="customCheck1" type="checkbox">
-                  <label class="custom-control-label text-small" for="customCheck1">Returns Accepted</label>
-                </div>
-                <div class="custom-control custom-checkbox mb-1">
-                  <input class="custom-control-input" id="customCheck2" type="checkbox">
-                  <label class="custom-control-label text-small" for="customCheck2">Returns Accepted</label>
-                </div>
-                <div class="custom-control custom-checkbox mb-1">
-                  <input class="custom-control-input" id="customCheck3" type="checkbox">
-                  <label class="custom-control-label text-small" for="customCheck3">Completed Items</label>
-                </div>
-                <div class="custom-control custom-checkbox mb-1">
-                  <input class="custom-control-input" id="customCheck4" type="checkbox">
-                  <label class="custom-control-label text-small" for="customCheck4">Sold Items</label>
+<!--                   <input class="custom-control-input" id="customCheck1" type="checkbox"> -->
+<!--                   <label class="custom-control-label text-small" for="customCheck1">Returns Accepted</label> -->
                 </div>
                 <div class="custom-control custom-checkbox mb-1">
-                  <input class="custom-control-input" id="customCheck5" type="checkbox">
-                  <label class="custom-control-label text-small" for="customCheck5">Deals &amp; Savings</label>
+<!--                   <input class="custom-control-input" id="customCheck2" type="checkbox"> -->
+<!--                   <label class="custom-control-label text-small" for="customCheck2">Returns Accepted</label> -->
+                </div>
+                <div class="custom-control custom-checkbox mb-1">
+<!--                   <input class="custom-control-input" id="customCheck3" type="checkbox"> -->
+<!--                   <label class="custom-control-label text-small" for="customCheck3">Completed Items</label> -->
+                </div>
+                <div class="custom-control custom-checkbox mb-1">
+<!--                   <input class="custom-control-input" id="customCheck4" type="checkbox"> -->
+<!--                   <label class="custom-control-label text-small" for="customCheck4">Sold Items</label> -->
+                </div>
+                <div class="custom-control custom-checkbox mb-1">
+<!--                   <input class="custom-control-input" id="customCheck5" type="checkbox"> -->
+<!--                   <label class="custom-control-label text-small" for="customCheck5">Deals &amp; Savings</label> -->
                 </div>
                 <div class="custom-control custom-checkbox mb-4">
-                  <input class="custom-control-input" id="customCheck6" type="checkbox">
-                  <label class="custom-control-label text-small" for="customCheck6">Authorized Seller</label>
+<!--                   <input class="custom-control-input" id="customCheck6" type="checkbox"> -->
+<!--                   <label class="custom-control-label text-small" for="customCheck6">Authorized Seller</label> -->
                 </div>
-                <h6 class="text-uppercase mb-3">Buying format</h6>
+                <h6 class="text-uppercase mb-3"></h6>
                 <div class="custom-control custom-radio">
-                  <input class="custom-control-input" id="customRadio1" type="radio" name="customRadio">
-                  <label class="custom-control-label text-small" for="customRadio1">All Listings</label>
-                </div>
-                <div class="custom-control custom-radio">
-                  <input class="custom-control-input" id="customRadio2" type="radio" name="customRadio">
-                  <label class="custom-control-label text-small" for="customRadio2">Best Offer</label>
+<!--                   <input class="custom-control-input" id="customRadio1" type="radio" name="customRadio"> -->
+<!--                   <label class="custom-control-label text-small" for="customRadio1">All Listings</label> -->
                 </div>
                 <div class="custom-control custom-radio">
-                  <input class="custom-control-input" id="customRadio3" type="radio" name="customRadio">
-                  <label class="custom-control-label text-small" for="customRadio3">Auction</label>
+<!--                   <input class="custom-control-input" id="customRadio2" type="radio" name="customRadio"> -->
+<!--                   <label class="custom-control-label text-small" for="customRadio2">Best Offer</label> -->
                 </div>
                 <div class="custom-control custom-radio">
-                  <input class="custom-control-input" id="customRadio4" type="radio" name="customRadio">
-                  <label class="custom-control-label text-small" for="customRadio4">Buy It Now</label>
+<!--                   <input class="custom-control-input" id="customRadio3" type="radio" name="customRadio"> -->
+<!--                   <label class="custom-control-label text-small" for="customRadio3">Auction</label> -->
+                </div>
+                <div class="custom-control custom-radio">
+<!--                   <input class="custom-control-input" id="customRadio4" type="radio" name="customRadio"> -->
+<!--                   <label class="custom-control-label text-small" for="customRadio4">Buy It Now</label> -->
                 </div>
               </div>
               <!-- SHOP LISTING-->
               <div class="col-lg-9 order-1 order-lg-2 mb-5 mb-lg-0">
                 <div class="row mb-3 align-items-center">
                   <div class="col-lg-6 mb-2 mb-lg-0">
-                    <p class="text-small text-muted mb-0">Showing 1–12 of 53 results</p>
+<!--                     <p class="text-small text-muted mb-0">Showing 1–12 of 53 results</p> -->
                   </div>
                   <div class="col-lg-6">
                     <ul class="list-inline d-flex align-items-center justify-content-lg-end mb-0">
+                    
+<!--                     네모 박스 정렬 -->
                       <li class="list-inline-item text-muted mr-3"><a class="reset-anchor p-0" href="#"><i class="fas fa-th-large"></i></a></li>
                       <li class="list-inline-item text-muted mr-3"><a class="reset-anchor p-0" href="#"><i class="fas fa-th"></i></a></li>
                       <li class="list-inline-item">
-                        <select class="selectpicker ml-auto" name="sorting" data-width="200" data-style="bs-select-form-control" data-title="Default sorting">
-                          <option value="default">order</option>
+
+
+<!--        정렬-->
+                        <select class="selectpicker ml-auto" name="sorting" data-width="200" data-style="bs-select-form-control" data-title="정렬">
+                        
+<!--                           <option value="default">order</option> -->
                           <option value="popularity">Popularity</option>
                           <option value="low-high">Price: Low to High</option>
                           <option value="high-low">Price: High to Low</option>
@@ -188,11 +210,8 @@
                   </div>
                 </div>
                 <div class="row">
-                  <!-- t-shirts PRODUCT-->
-               
-
-<table>
-        <tr width="800"><td>          <div class="col-lg-4 col-sm-6">
+                  <!-- PRODUCT-->
+                  <div class="col-lg-4 col-sm-6">
                     <div class="product text-center">
                       <div class="mb-3 position-relative">
                         <div class="badge text-white badge-"></div><a class="d-block" href="detail.html"><img class="img-fluid w-100" src="img/product-1.jpg" alt="..."></a>
@@ -208,12 +227,11 @@
                       <p class="small text-muted">$250</p>
                     </div>
                   </div>
-                </td> 
-                
-              <td>          <div class="col-lg-4 col-sm-6">
+                  <!-- PRODUCT-->
+                  <div class="col-lg-4 col-sm-6">
                     <div class="product text-center">
                       <div class="mb-3 position-relative">
-                        <div class="badge text-white badge-"></div><a class="d-block" href="detail.html"><img class="img-fluid w-100" src="img/product-1.jpg" alt="..."></a>
+                        <div class="badge text-white badge-"></div><a class="d-block" href="detail.html"><img class="img-fluid w-100" src="img/product-2.jpg" alt="..."></a>
                         <div class="product-overlay">
                           <ul class="mb-0 list-inline">
                             <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-outline-dark" href="#"><i class="far fa-heart"></i></a></li>
@@ -222,15 +240,15 @@
                           </ul>
                         </div>
                       </div>
-                      <h6> <a class="reset-anchor" href="detail.html">Kui Ye Chen’s AirPods</a></h6>
-                      <p class="small text-muted">$250</p>
+                      <h6> <a class="reset-anchor" href="detail.html">Air Jordan 12 gym red</a></h6>
+                      <p class="small text-muted">$300</p>
                     </div>
                   </div>
-                </td> 
-                <td>          <div class="col-lg-4 col-sm-6">
+                  <!-- PRODUCT-->
+                  <div class="col-lg-4 col-sm-6">
                     <div class="product text-center">
                       <div class="mb-3 position-relative">
-                        <div class="badge text-white badge-"></div><a class="d-block" href="detail.html"><img class="img-fluid w-100" src="img/product-1.jpg" alt="..."></a>
+                        <div class="badge text-white badge-primary">New</div><a class="d-block" href="detail.html"><img class="img-fluid w-100" src="img/product-3.jpg" alt="..."></a>
                         <div class="product-overlay">
                           <ul class="mb-0 list-inline">
                             <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-outline-dark" href="#"><i class="far fa-heart"></i></a></li>
@@ -239,14 +257,65 @@
                           </ul>
                         </div>
                       </div>
-                      <h6> <a class="reset-anchor" href="detail.html">Kui Ye Chen’s AirPods</a></h6>
+                      <h6> <a class="reset-anchor" href="detail.html">Cyan cotton t-shirt</a></h6>
+                      <p class="small text-muted">$25</p>
+                    </div>
+                  </div>
+                  <!-- PRODUCT-->
+                  <div class="col-lg-4 col-sm-6">
+                    <div class="product text-center">
+                      <div class="mb-3 position-relative">
+                        <div class="badge text-white badge-"></div><a class="d-block" href="detail.html"><img class="img-fluid w-100" src="img/product-4.jpg" alt="..."></a>
+                        <div class="product-overlay">
+                          <ul class="mb-0 list-inline">
+                            <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-outline-dark" href="#"><i class="far fa-heart"></i></a></li>
+                            <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-dark" href="cart.html">Add to cart</a></li>
+                            <li class="list-inline-item mr-0"><a class="btn btn-sm btn-outline-dark" href="#productView" data-toggle="modal"><i class="fas fa-expand"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <h6> <a class="reset-anchor" href="detail.html">Timex Unisex Originals</a></h6>
+                      <p class="small text-muted">$351</p>
+                    </div>
+                  </div>
+                  <!-- PRODUCT-->
+                  <div class="col-lg-4 col-sm-6">
+                    <div class="product text-center">
+                      <div class="mb-3 position-relative">
+                        <div class="badge text-white badge-info">Sale</div><a class="d-block" href="detail.html"><img class="img-fluid w-100" src="img/product-5.jpg" alt="..."></a>
+                        <div class="product-overlay">
+                          <ul class="mb-0 list-inline">
+                            <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-outline-dark" href="#"><i class="far fa-heart"></i></a></li>
+                            <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-dark" href="cart.html">Add to cart</a></li>
+                            <li class="list-inline-item mr-0"><a class="btn btn-sm btn-outline-dark" href="#productView" data-toggle="modal"><i class="fas fa-expand"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <h6> <a class="reset-anchor" href="detail.html">Red digital smartwatch</a></h6>
                       <p class="small text-muted">$250</p>
                     </div>
                   </div>
-                </td> 
-                </tr>
+                  <!-- PRODUCT-->
+                  <div class="col-lg-4 col-sm-6">
+                    <div class="product text-center">
+                      <div class="mb-3 position-relative">
+                        <div class="badge text-white badge-"></div><a class="d-block" href="detail.html"><img class="img-fluid w-100" src="img/product-6.jpg" alt="..."></a>
+                        <div class="product-overlay">
+                          <ul class="mb-0 list-inline">
+                            <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-outline-dark" href="#"><i class="far fa-heart"></i></a></li>
+                            <li class="list-inline-item m-0 p-0"><a class="btn btn-sm btn-dark" href="cart.html">Add to cart</a></li>
+                            <li class="list-inline-item mr-0"><a class="btn btn-sm btn-outline-dark" href="#productView" data-toggle="modal"><i class="fas fa-expand"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <h6> <a class="reset-anchor" href="detail.html">Nike air max 95</a></h6>
+                      <p class="small text-muted">$300</p>
+                    </div>
+                  </div>
+                 
+                 
                   
-    </table>             
+                 
                  
                 
                 <!-- PAGINATION-->
@@ -275,16 +344,19 @@
       <script src="vendor/owl.carousel2.thumbs/owl.carousel2.thumbs.min.js"></script>
       <script src="js/front.js"></script>
       <!-- Nouislider Config-->
+      
       <script>
         var range = document.getElementById('range');
         noUiSlider.create(range, {
-            range: {
+           
+        
+        	range: {
                 'min': 0,
-                'max': 2000
+                'max': 150
             },
-            step: 5,
-            start: [100, 1000],
-            margin: 300,
+            step: 10,
+            start: [0, 40],
+            margin: 0,
             connect: true,
             direction: 'ltr',
             orientation: 'horizontal',
@@ -295,9 +367,29 @@
                 return '$' + value;
               },
               from: function ( value ) {
+            	  
+            	  
                 return value.replace('', '');
               }
             }
+        });
+        var inputLower=document.getElementById('lower');
+        inputUpper=document.getElementById('upper');
+        
+        range.noUiSlider.on('update',function (values,handle){
+        	if(handle){
+        		
+        	inputUpper.value=values[handle];
+        	}else{
+        		inputLower.value=values[handle];
+        	}
+        });
+        
+        inputUpper.addEventListener('change',function(){
+        	range.noUiSlider.set([null,this.value]);
+        });
+        inputLower.addEventListener('change',function(){
+        	range.noUiSlider.set([null,this.value]);
         });
         
       </script>

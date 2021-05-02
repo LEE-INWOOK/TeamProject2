@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <!--     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  -->
-    <title>Boutique | Ecommerce bootstrap template </title>
+    <title>jackets </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
@@ -58,7 +58,7 @@
                     
 <!--                     이미지누루면 확대돼서 나오는 이미 -->
 
-                    <h2 class="h4">확대이미지</h2>
+                    <h2 class="h4">한글테스츠</h2>
                     <p class="text-muted">$20</p>
                     <p class="text-small mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.</p>
                     <div class="row align-items-stretch mb-4">
@@ -107,11 +107,11 @@
                 <h5 class="text-uppercase mb-4"></h5>
                 <div class="py-2 px-4 bg-dark text-white mb-3"><strong class="small text-uppercase font-weight-bold">Fashion</strong></div>
                 <ul class="list-unstyled small text-muted pl-lg-4 font-weight-normal">
-                  <li class="mb-2"><a class="reset-anchor" href="tshirts.jsp">T-Shirts</a></li>
-                  <li class="mb-2"><a class="reset-anchor" href="trousers.jsp">Trousers</a></li>
-                  <li class="mb-2"><a class="reset-anchor" href="skirts.jsp">Skirts</a></li>
-                  <li class="mb-2"><a class="reset-anchor" href="jackets.jsp">Jackets</a></li>
-                  <li class="mb-2"><a class="reset-anchor" href="caps.jsp">Caps</a></li>
+                  <li class="mb-2"><a class="reset-anchor" href="#">T-Shirts</a></li>
+                  <li class="mb-2"><a class="reset-anchor" href="#">Trousers</a></li>
+                  <li class="mb-2"><a class="reset-anchor" href="#">Skirts</a></li>
+                  <li class="mb-2"><a class="reset-anchor" href="#">Jackets</a></li>
+                  <li class="mb-2"><a class="reset-anchor" href="#">Caps</a></li>
                  
                 </ul>
                
@@ -121,16 +121,14 @@
        <br>
        <br>
        <br>
-       <form action=price.jsp method=get>
                 <h6 class="text-uppercase mb-4">Price range</h6>
                 <div class="price-range pt-4 mb-5">
                   
                  <div id="range"></div>
                   
                   <div class="row pt-2">
-                    <div class="col-6"><strong class="small font-weight-bold text-uppercase">From<input type="hidden" name="lower" id="lower"></strong></div>
-                    <div class="col-6 text-right"><strong class="small font-weight-bold text-uppercase">To<input type="hidden" name="upper" id="upper"></strong></div>
-                  	<input type="submit" value="search"></form>
+                    <div class="col-6"><strong class="small font-weight-bold text-uppercase">From<input type="hidden" value="" id="lower"></strong></div>
+                    <div class="col-6 text-right"><strong class="small font-weight-bold text-uppercase">To<input type="hidden" value="" id="upper"></strong></div>
                   </div>
                   
                 </div>
@@ -198,23 +196,21 @@
                       <li class="list-inline-item text-muted mr-3"><a class="reset-anchor p-0" href="#"><i class="fas fa-th"></i></a></li>
                       <li class="list-inline-item">
 
-<form action="sort.jsp" method="get">
+
 <!--        정렬-->
-                        <select class="selectpicker ml-auto" name="sorting" data-width="200" data-style="bs-select-form-control" data-title="정렬" onchange="formChange(this.form)">
+                        <select class="selectpicker ml-auto" name="sorting" data-width="200" data-style="bs-select-form-control" data-title="정렬">
                         
 <!--                           <option value="default">order</option> -->
                           <option value="popularity">Popularity</option>
                           <option value="low-high">Price: Low to High</option>
                           <option value="high-low">Price: High to Low</option>
                         </select>
-                        </form>
                       </li>
                     </ul>
                   </div>
                 </div>
-                
                 <div class="row">
-                  <!-- PRODUCT db연동해서 for문 -->
+                  <!-- PRODUCT-->
                   <div class="col-lg-4 col-sm-6">
                     <div class="product text-center">
                       <div class="mb-3 position-relative">
@@ -358,7 +354,7 @@
                 'min': 0,
                 'max': 150
             },
-            step: 1,
+            step: 10,
             start: [0, 40],
             margin: 0,
             connect: true,
@@ -366,7 +362,16 @@
             orientation: 'horizontal',
             behaviour: 'tap-drag',
             tooltips: true,
-
+            format: {
+              to: function ( value ) {
+                return '$' + value;
+              },
+              from: function ( value ) {
+            	  
+            	  
+                return value.replace('', '');
+              }
+            }
         });
         var inputLower=document.getElementById('lower');
         inputUpper=document.getElementById('upper');
@@ -387,21 +392,6 @@
         	range.noUiSlider.set([null,this.value]);
         });
         
-        
-        
-        function formChange(obj)
-    	{
-    		//alert("함수호출확인");
-    		
-    		
-    		
-    		
-    		obj.submit(); //obj자체가 form이다.
-    		//『폼객체.submit();』 함수의 호출을 통해
-    		//form 객체의 데이터를 서버로 전송하는 것이 가능하다.
-    		
-    		
-    	}
       </script>
       <script>
         // ------------------------------------------------------- //
